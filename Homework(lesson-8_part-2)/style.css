@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3399cc;
+  border-style: solid;
+  border-width: 5%;
+  border-color: #2b81ac;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+}
+.propouse,
+.main-title {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  text-align: center;
+}
+.catalog-city {
+  width: 70vw;
+  height: 50vh;
+  font-size: 0;
+  border: 0.5vh solid #fff;
+  margin-left: 15%;
+}
+.catalog-item {
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  border: 0.5vh solid white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 3vh;
+  color: #fff;
+}
+.sidney {
+  width: 100%;
+}
+.lisbon,
+.kyiv {
+  width: 50%;
+}
+.catalog-city:hover .catalog-item:not(:hover) {
+  opacity: 0.5;
+}
