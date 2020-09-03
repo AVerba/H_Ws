@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="modal-win">
+        <input type="radio" name="login" id="sign-in" checked />
+        <label class="top-menu__item item--sign-in" for="sign-in"
+          >Sign in</label
+        >
+        <input type="radio" name="login" id="join-us" />
+        <label class="top-menu__item item--join-us" for="join-us"
+          >Join Us</label
+        >
+
+        <form action="#" method="GET" id="sign-form">
+          <div class="main">
+            <div class="main__item">
+              <label class="form__label" for="Username">Username</label>
+              <input
+                class="form__input"
+                minlength="3"
+                type="text"
+                name="Username"
+                id="Username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="main__item">
+              <label class="form__label" for="Password">Password</label>
+              <input
+                class="form__input"
+                minlength="3"
+                type="text"
+                name="Password"
+                id="Password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="main__item--checkbox">
+              <input checked type="checkbox" name="keep-me" id="keep-me" />
+              <label class="form__label--checkbox" for="keep"
+                >Keep me signed in</label
+              >
+            </div>
+            <div class="main__item--btn">
+              <button type="submit" class="btn-dubmit">Sign in</button>
+            </div>
+            <ul class="sum-menu">
+              <li class="sub-menu__item">Forgot password</li>
+              <li class="sub-menu__item">Create an account</li>
+            </ul>
+          </div>
+        </form>
+
+        <form action="#" method="GET" id="join-form">
+          <div class="main">
+            <div class="main__item">
+              <label class="form__label" for="Username">Username</label>
+              <input
+                class="form__input"
+                minlength="3"
+                type="text"
+                name="Username"
+                id="Username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="main__item">
+              <label class="form__label" for="Password">Password</label>
+              <input
+                class="form__input"
+                minlength="3"
+                type="text"
+                name="Password"
+                id="Password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="main__item--btn">
+              <button type="submit" class="btn-dubmit">Sign in</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
