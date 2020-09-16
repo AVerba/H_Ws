@@ -1,0 +1,67 @@
+.container {
+  background-color: grey;
+}
+.deck-of-cards {
+  width: 1440px;
+  height: 100vh;
+  background-color: green;
+  margin: 0 auto;
+}
+.card {
+  display: inline-block;
+  width: 144px;
+  height: 209px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.front-side,
+.back-side {
+  width: 144px;
+  height: 240px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.front-side {
+  background: url(../img/cards_front.jpg) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(1) .back-side {
+  background: url(../img/card_face/cards_1.png) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(2) .back-side {
+  background: url(../img/card_face/cards_2.png) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(3) .back-side {
+  background: url(../img/card_face/cards_3.png) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(4) .back-side {
+  background: url(../img/card_face/cards_4.png) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(5) .back-side {
+  background: url(../img/card_face/cards_5.png) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(6) .back-side {
+  background: url(../img/card_face/cards_6.png) center/cover no-repeat;
+}
+.deck-of-cards :nth-child(7) .back-side {
+  background: url(../img/card_face/cards_7.png) center/cover no-repeat;
+}
+.card:hover .front-side {
+  transform: rotateY(180deg);
+}
+.card:hover .back-side {
+  transform: rotateY(360deg);
+}
+.back-side {
+  transform: rotateY(180deg);
+}
